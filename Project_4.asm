@@ -28,10 +28,7 @@ main:
 	mov eax, input
 	sub eax, "0"
 
-	mov ebx, input
-	sub ebx, "0"
-
-	add eax, ebx
+	imul eax
 	add eax, "0"
 
 	mov [sum], eax
