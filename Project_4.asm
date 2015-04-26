@@ -26,11 +26,7 @@ main:
 	add esp, 16
 
 	mov eax, input
-	sub eax, "0"
-
-	imul eax
-	add eax, "0"
-
+	imul eax, eax
 	mov [sum], eax
 
 	push dword 5
