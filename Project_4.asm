@@ -25,9 +25,14 @@ main:
 	int 0x80
 	add esp, 16
 
-	mov eax, input
-	imul eax, eax
-	mov [sum], eax
+	mov al, '2'
+	sub al, '0'
+
+	mov bl, input
+	sub bl, '0'
+
+	mul bl
+	mov [sum], al
 
 	push dword 5
 	push dword sum
